@@ -1,0 +1,228 @@
+.wrap-inner{}
+
+.wrap-inner:before,
+.wrap-inner:after{
+  content: "";
+  display: table;
+  clear:both;
+}
+
+#wp-writer-sidebar{}
+
+#wp-writer-sidebar ul{}
+
+#wp-writer-sidebar ul li{
+    margin: 0;
+}
+
+#wp-writer-sidebar ul li{
+  /* border: 1px solid #b5bfc9;
+  border-top: 0px none; */
+}
+
+#wp-writer-sidebar ul li{
+
+}
+
+#wp-writer-sidebar ul li a{
+  background: #f8f9fa;
+  border: 1px solid #b5bfc9;
+  border-top: 0px none;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #807F7F;
+  transition: all .4s linear;
+}
+
+
+#wp-writer-sidebar ul li:first-child a{
+  border-top: 1px solid #b5bfc9;
+}
+
+#wp-writer-sidebar ul li a:hover,
+#wp-writer-sidebar ul li a.active{
+  background: #fff;
+  border-right: none;
+}
+
+.wp-writer-contentpart {
+    background: #fff;
+    padding: 24px 50px 50px 50px;
+}
+
+.wp-writer-contentpart{
+  font-size: 16px;
+}
+
+.wp-writer-contentpart h2 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.wp-writer-contentpart .form-table td label{
+  display: block;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.wp-writer-contentpart .form-table td label input[type="checkbox"]{
+  /* width: 24px;
+  height: 24px; */
+  accent-color: #000;
+  color: #fff;
+  border:1px solid #000;
+  border-radius: 10px;
+  -webkit-appearance: auto;
+  width: 18px;
+  height: 18px;
+  outline: none;
+}
+
+.wp-writer-contentpart .form-table td label input[type="checkbox"]:focus{
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.wp-writer-contentpart .form-table td label input[type="checkbox"]:before{
+  content: "";
+}
+
+
+
+
+
+
+
+
+
+
+input[type=range] {
+   -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+   width: 300px;
+   height: 3px;
+   background: #000;
+   border: none;
+   border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   border: none;
+   height: 20px;
+   width: 16px;
+   /* border-radius: 50%; */
+   /* background: goldenrod; */
+
+
+    margin-bottom: -2px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid black;
+}
+input[type=range]:focus {
+   outline: none;
+}
+ input[type=range]:focus::-webkit-slider-runnable-track {
+   background: #000;
+}
+input[type=range] {
+   /* fix for FF unable to apply focus style bug  */
+   border: 1px solid white;
+   /*required for proper track sizing in FF*/
+   width: 100%;
+   max-width: 500px;
+}
+ 
+
+/* input[type=range]::-moz-range-track {
+   width: 300px;
+   height: 5px;
+   background: #ddd;
+   border: none;
+   border-radius: 3px;
+}
+ input[type=range]::-moz-range-thumb {
+   border: none;
+   height: 16px;
+   width: 16px;
+   border-radius: 50%;
+   background: #000;
+   margin-bottom: -10px;
+}
+
+
+input[type=range]:-moz-focusring {
+   outline: 1px solid white;
+   outline-offset: -1px;
+}
+ input[type=range]:focus::-moz-range-track {
+   background: #ccc;
+} */
+
+.form-table{
+  margin-top: 1.5em;
+}
+
+.form-table output {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* add css 06-09-2024 */
+#toplevel_page_wp_writer .wp-menu-image img {
+  max-width: 24px;
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  left: 6px;
+  top: 48%;
+  transform: translateY(-50%);
+}
+#wp-writer-sidebar {
+  float: none !important;
+  width: 100% !important;
+  order: 1;
+}
+#wp-writer-content {
+  float: none !important;
+  width: 100% !important;
+  order: 1;
+}
+#wpbody-content .wrap-inner {
+  display: grid;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 30px;
+  grid-template-columns: 250px 1fr;
+}
+#wp-writer-sidebar ul li a.active {
+  font-size: 14px;
+  font-weight: bold;
+  color: #232628;
+}
+#wp-writer-sidebar ul li a {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 33px 1fr;
+  gap: 5px;
+}
+#wp-writer-sidebar ul li a img {
+  width: 100%;
+  height: 18px;
+}
+
+@media (max-width: 991.5px) {
+  #wpbody-content .wrap-inner {
+    grid-template-columns: 1fr;
+  }
+  #wp-writer-content {
+    margin-top: 20px;
+  }
+}
+/* add css 06-09-2024 end */

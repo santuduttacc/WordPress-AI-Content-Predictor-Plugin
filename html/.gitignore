@@ -1,0 +1,38 @@
+# Ignore sensitive configuration files
+wp-config.php
+.htaccess
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and debug files
+error_log
+debug.log
+
+# Ignore log files and temp files
+*.log
+*.tmp
+*.swp
+
+# Ignore user uploads (optional, if you don't need to version control them)
+wp-content/uploads/
+
+# Ignore cache files
+wp-content/cache/
+wp-content/advanced-cache.php
+
+# Ignore plugin-specific cache or backup files
+*.zip
+*.tar.gz
+
+# Ignore IDE or editor settings
+.idea/
+.vscode/
+
+# Ignore composer files
+/composer.lock
+/composer.json
+
+# Ignore root-level vendor directory
+/vendor/

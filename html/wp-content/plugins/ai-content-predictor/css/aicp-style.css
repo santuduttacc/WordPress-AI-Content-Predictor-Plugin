@@ -1,0 +1,45 @@
+#aicp_progress_bar {
+    display: flex;
+    height: 20px;
+    width: 100%;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.aicp_progress {
+    height: 100%;
+}
+
+#aicp_progress_ai {
+    background-color: #ff4c4c; /* Red for AI-generated content */
+    color : white;
+    text-align: center;
+}
+
+#aicp_progress_human {
+    background-color: #4caf50; /* Green for human-generated content */
+    color : white;
+    text-align: center;
+}
+
+#aicp_progress_mixed {
+    background-color: #ffc107; /* Yellow for mixed content */
+    color : white;
+    text-align: center;
+}
+.editor-post-publish-button__button[aria-disabled=true] {
+    color: #ffff !important;
+    cursor: pointer !important;
+}
+
+.lockPostSaving::before {
+    content: "\f023";
+    display: inline-block;
+    font: normal normal normal 20px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    margin: 2px 8px 0 0;
+}

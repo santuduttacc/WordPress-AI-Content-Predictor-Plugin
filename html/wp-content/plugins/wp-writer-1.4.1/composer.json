@@ -1,0 +1,17 @@
+{
+    "name": "codeclouds/wp-writer",
+    "description": "Predicts whether post content is AI-generated, human-generated, or mixed, and disables the Publish button if fully AI-generated.",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Santu Dutta",
+            "email": "santu.dutta@codeclouds.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WP_Writer\\": "src/"
+        }
+    },
+    "require": {}
+}
